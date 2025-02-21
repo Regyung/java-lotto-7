@@ -112,22 +112,22 @@
 ## 구현할 기능 목록
 ### Model
     Lotto
-    - validate()
-    - getNumbers()
-    LottoModel
-    - 로또 번호 오름차순 정렬
-    - 당첨 번호, 보너스 번호 List화
-    - 로또 번호 비교
+    - numbers[List<Integer>]
+    LottoData
     - 로또[List<Lotto>]
-    - 당첨, 보너스 번호[List<Integer>]
+    - 당첨 번호[List<Integer>]
+    - 보너스 번호[int]
     - 등수 결과[intArray[5]]
 ### Utils
     - Enum
+    - 로또 번호 생성
     - 입력값 검증
 ### Service
+    Calculator
     - 로또 장수 계산
-    - 로또 번호 뽑기
     - 수익률 계산
+    LottoService
+    - 당첨 로또 확인
 ### View
     - 구입 금액 입력
     - 당첨 번호 입력
@@ -135,4 +135,6 @@
     - 발행한 로또 수량 및 번호 출력
     - 당첨 내역 및 수익률 출력
 ### Controller
-    - controller()
+    - 입력값으로 객체들 선언 및 초기화
+    - 로또 확인
+    - 결과 출력
